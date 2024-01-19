@@ -165,6 +165,7 @@ const BitcoinWallet = () => {
             height="7.956"
             viewBox="0 0 26.28 7.956"
             onClick={toggleHeight}
+            style={{rotate:isExpanded?"180deg":""}}
           >
             <path
               id="Path_9322"
