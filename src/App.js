@@ -2,7 +2,7 @@ import classes from "../src/styles/components/layout/body.module.scss";
 import BuyBtc from "./components/buyBtc";
 import DayTab from "./components/dayTab";
 import Graph from "./components/graph";
-import BitcoinBox from "./components/layout/BitcoinWallet";
+import BitcoinBox from "./components/BitcoinWallet";
 const bitcoinIconBuy = (
   <svg
     xmlns="http://www.w3.org/2000/svg"

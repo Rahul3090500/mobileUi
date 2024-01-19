@@ -1,5 +1,5 @@
 .popup {
-    position: absolute;
+    position: fixed;
     top: 70px;
     height: 139px;
     width: 150px;
@@ -14,9 +14,7 @@
         position: relative;
         text-align: left;
         margin-left: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
         .text {
             font-family: "SF-Sm-Bd";
             color: #4c5968d2;
@@ -26,5 +24,8 @@
             display: flex;
             align-items: center;
         }
+          .removeText {
+            color: #ff0000;
+          }
     }
 }
