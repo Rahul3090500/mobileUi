@@ -20,7 +20,12 @@ const Graph = () => {
 
   return (
     <div className={classes.Graph}>
-      <LineChart width={400} height={350} data={data}>
+       <div className={classes.additionalInfo}>
+          <div className={classes.infoItem}><span style={{backgroundColor:"red",marginRight:"10px"}}></span>Lower: $4.895</div>
+          <div className={classes.infoItem}><span style={{backgroundColor:"#58ff00",marginRight:"10px"}}></span>Higher: $4.895</div>
+          <div className={classes.infoItem2}><span style={{backgroundColor:"orange"}}></span>1ВТС=$5.483</div>
+        </div>
+      <LineChart width={500} height={350} data={data}>
         <defs>
           <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="#ff961d" stopOpacity={0.8} />

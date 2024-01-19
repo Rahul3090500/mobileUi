@@ -68,6 +68,7 @@ const bitcoinIconSell = (
 
 );
 function App() {
+  
   return (
     <div className={classes.main}>
       <BitcoinBox />

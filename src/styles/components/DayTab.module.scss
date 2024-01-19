@@ -3,6 +3,7 @@
   justify-content: space-between;
   width: 80%;
   margin-top: 14px;
+
   .tab {
     font-family: "SF-Sm-Bd";
     font-size: 12px;
@@ -16,6 +17,7 @@
     text-align: center;
 
   }
+
   .active {
     color: #fff;
     background-color: #aeb8c4;
@@ -27,5 +29,9 @@
     justify-content: center;
     border-radius: 13px;
     font-family: "SF-Sm-Bd";
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
   }
 }
