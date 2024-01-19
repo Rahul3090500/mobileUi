@@ -1,0 +1,31 @@
+.daytab {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 14px;
+  .tab {
+    font-family: "SF-Sm-Bd";
+    font-size: 12px;
+    color: #aeb8c4;
+    width: 55px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .active {
+    color: #fff;
+    background-color: #aeb8c4;
+    width: 55px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 13px;
+    font-family: "SF-Sm-Bd";
+  }
+}

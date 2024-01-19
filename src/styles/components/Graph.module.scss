@@ -1,0 +1,77 @@
+.Graph {
+    background-color: #fff;
+    height: 200px;
+    margin-top: 25px;
+    width: 85%;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    &__content {
+      .top {
+        .left {
+          position: relative;
+  
+          svg {
+            scale: 0.32;
+            position: absolute;
+            top: -37px;
+            left: -27px;
+          }
+          .text {
+            font-family: "SF-Sm-Bd";
+            font-size: 12px;
+            position: absolute;
+            top: 39px;
+            left: 100px;
+          }
+          .text2 {
+            font-family: "SF-Sm-Bd";
+            font-size: 12px;
+            position: absolute;
+            top: 39px;
+            right: 27px;
+            color: #aeb8c4;
+          }
+        }
+      }
+      .balance {
+        position: relative;
+        top: 82px;
+        width: 85%;
+        margin: auto;
+        .text {
+          font-family: "SF-Sm-Bd";
+          font-size: 30px;
+          color: #4c5968;
+        }
+        .bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 8px;
+  
+          .text {
+              font-size: 18px;
+              font-family: "SF-Sm-Bd";
+              color: #aeb8c4;
+  
+          }
+          svg {
+              text {
+                  font-family: "SF-Sm-Bd";
+                  font-size: 13px;
+                  fill: #fff;
+              }
+          }
+        }
+      }
+      .downArrow {
+          position: absolute;
+          bottom: 20px;
+          display: flex;
+          width: 100%;
+          justify-content: center;    }
+    }
+  }
+  
