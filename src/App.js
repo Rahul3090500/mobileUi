@@ -76,7 +76,6 @@ function App() {
       <Graph />
       <div className={classes.buy_sell}>
         <BuyBtc icon={bitcoinIconBuy} text="Buy BTC" />
-
         <BuyBtc icon={bitcoinIconSell} text="Sell BTC" />
       </div>
     </div>

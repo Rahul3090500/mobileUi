@@ -37,9 +37,17 @@ body {
 .recharts-wrapper {
     svg {
         width: 90% !important;
-        height: 50%  !important;
-       margin-left: -20%; 
-       margin-top: 10%; 
+        height: 40%  !important;
+       margin-left: -25%; 
+       margin-top: 0%; 
 
     }
+}
+.main-page {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .main-page {
+    display: block;
+  }
 }

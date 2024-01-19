@@ -1,7 +1,8 @@
-// import editIcon from "../../public/icons/editIcon.png";
-// import infoIcon from "../../public/icons/editIcon.png";
-// import shareIcon from "../../public/icons/editIcon.png";
-// import removeIcon from "../../public/icons/editIcon.png";
+import { ReactComponent as EditIcon } from "../icons/edit.svg";
+import { ReactComponent as CourierInfoIcon } from "../icons/info.svg";
+import { ReactComponent as ShareIcon } from "../icons/share.svg";
+import { ReactComponent as RemoveIcon } from "../icons/remove.svg";
+
 const handleEdit = () => {
     // Handle edit action
     console.log("Edit clicked");
@@ -24,9 +25,9 @@ const handleEdit = () => {
   
 
 
-export const popupActions = [
-  { label: "Edit", onClick: handleEdit, icon: "" },
-  { label: "Courier Info", onClick: handleCourierInfo, icon: "" },
-  { label: "Share", onClick: handleShare, icon: "" },
-  { label: "Remove", onClick: handleRemove, icon: "" },
-];
+  export const popupActions = [
+    { label: "Edit", onClick: handleEdit, icon: <EditIcon /> },
+    { label: "Courier Info", onClick: handleCourierInfo, icon: <CourierInfoIcon /> },
+    { label: "Share", onClick: handleShare, icon: <ShareIcon /> },
+    { label: "Remove", onClick: handleRemove, icon: <RemoveIcon /> },
+  ];

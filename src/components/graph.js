@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import classes from "../styles/components/Graph.module.scss";
-import { LineChart, Line, Area, defs, linearGradient, stop, LabelList } from "recharts";
+import { LineChart, Line, Area, LabelList } from "recharts";
 
 const Graph = () => {
   const [data, setData] = useState([{ name: "Page A", uv: 200, pv: 100, amt: 400 }]);
@@ -8,14 +8,13 @@ const Graph = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       // Update the data for a moving effect
-      const newDataPoint = { name: `Page ${data.length + 1}`, uv: Math.random() * 200, pv: Math.random() * 300, amt: 200 };
+      const newDataPoint = { name: `Page ${data.length + 1}`, uv: Math.random() * 100, pv: Math.random() * 300, amt: 200 };
       setData(prevData => [...prevData, newDataPoint]);
-    }, 1000); // Update every 1 second
+    }, 5000); 
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
   }, [data]);
-
   const latestDataPoint = data[data.length - 1];
 
   return (
@@ -25,7 +24,7 @@ const Graph = () => {
           <div className={classes.infoItem}><span style={{backgroundColor:"#58ff00",marginRight:"10px"}}></span>Higher: $4.895</div>
           <div className={classes.infoItem2}><span style={{backgroundColor:"orange"}}></span>1ВТС=$5.483</div>
         </div>
-      <LineChart width={500} height={350} data={data}>
+        <LineChart width={500} height={350} data={data}>
         <defs>
           <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
             <stop offset="5%" stopColor="#ff961d" stopOpacity={0.8} />
